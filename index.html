@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey form using CSS/Bootstrap 4.0</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+    <title>Survey form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="app.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <main>
+        <div class="title">
+            <h1 id="title">Survey form </h1>
+        </div>
+        <p id="description">
+            Let's create some form using CSS/Bootstrap4.0.
+        </p>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="card" id="box">
+                    <form id="survey-form">
+                        <div class="form-group">
+                            <label id="name-label">Enter your name</label>
+                            <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label id="email-label">Enter your email</label>
+                            <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label id="number-label">Enter your age</label>
+                            <input type="number" class="form-control" min="18" max="60" name="number" id="number" aria-describedby="helpId" placeholder="Age"
+                                required>
+                            <small><i>Range between 18-60</i></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropdown">Select city</label>
+                            <select class="form-control" name="dropdown" id="dropdown">
+                                <option>Coimbatore</option>
+                                <option>Chennai</option>
+                                <option>Madhurai</option>
+                              </select>
+                        </div>
+                        <p>Nationality </p>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="nation" id="" value="checkedValue" checked>
+                                Citizen  </label>
+                            <br>
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="nation" id="" value="checkedValue" >
+                                Non-citizen
+                            </label>
+                        </div>
+                        <p>Languages known</p>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="" id="" value="English"> English
+                            </label> &nbsp;
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="" id="" value="Tamil"> Tamil
+                            </label>&nbsp;
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="" id="" value="Malayalam"> Malayalam
+                            </label>&nbsp;
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="" id="" value="Kanada"> Kanada
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <br>
+                            <label for="">More about you.</label>
+                            <textarea placeholder="Feedback panel" class="form-control" name="" id="" rows="3"></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="submit" id="submit" class="form-control" name="" aria-describedby="helpId" placeholder="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
